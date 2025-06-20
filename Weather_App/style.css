@@ -1,0 +1,104 @@
+/* ----------- RESET AND BASE ----------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ----------- CONTAINER ----------- */
+.weather-app {
+  background: #ffffffdd;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.weather-app h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ----------- INPUT AND BUTTON ----------- */
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #4d9fda;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  border: none;
+  background: #4d9fda;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: background 0.3s;
+}
+
+.input-group button:hover {
+  background: #2f80ed;
+}
+
+/* ----------- WEATHER RESULT ----------- */
+.weather-result {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-result img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-result h2 {
+  margin: 10px 0;
+}
+
+.weather-result p {
+  margin: 4px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ----------- ERROR MESSAGE ----------- */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 480px) {
+  .input-group {
+    flex-direction: column;
+  }
+  .input-group input, 
+  .input-group button {
+    border-radius: 8px;
+  }
+  .input-group button {
+    margin-top: 10px;
+  }
+}

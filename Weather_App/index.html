@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Weather App</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="weather-app">
+    <h1>Weather App</h1>
+    <div class="input-group">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="weather-result" id="weatherResult">
+      <img id="weatherIcon" src="" alt="Weather Icon">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+    </div>
+    <p class="error" id="errorMsg"></p>
+  </div>
+
+  <!-- Link to the external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
